@@ -570,37 +570,59 @@ footer{
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     width: 90%;
     max-width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%; /* Ajusta todas las tarjetas a la misma altura */
 }
 
 .producto-img {
     width: 120px;
-    height: auto;
+    height: 120px;
     margin-bottom: 10px;
     border-radius: 5px;
-    object-fit: contain;
+    object-fit: contain; /* Evita que las imágenes se deformen */
+}
+
+h3 {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 10px 0;
+    color: #333;
+    min-height: 48px; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center; /* Centra el texto de los títulos */
 }
 
 .precio {
-    font-size: 18px;
+    font-size: 16px;
     color: #764ba2;
     font-weight: bold;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
 }
 
 .boton {
     background-color: #667eea;
     color: white;
-    padding: 8px 12px;
+    padding: 10px 15px;
     border: none;
     border-radius: 5px;
     font-size: 14px;
     cursor: pointer;
     transition: background-color 0.3s ease;
+    width: 100%; 
+    max-width: 200px; 
+    text-align: center;
 }
 
 .boton:hover {
     background-color: #764ba2;
 }
+
+
 /* Termina Productos */
 
 
