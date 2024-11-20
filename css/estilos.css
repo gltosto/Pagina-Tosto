@@ -247,7 +247,7 @@ body{
     transition: transform 0.3s ease-in-out;
     box-sizing: border-box;
     z-index: 100; /* Asegura que siempre esté visible */
-    overflow-y: auto; /* Permite scroll si la imagen es grande */
+    overflow-y: auto; /* Scroll si la imagen es grande */
 }
 
 .contenedor-light {
@@ -316,7 +316,7 @@ p {
     cursor: pointer;
 }
 
-/* Expertos */
+/* Creadores de contenido */
 
 .experts{
     display: flex;
@@ -410,7 +410,199 @@ footer{
     margin-bottom: 60px;
 }
 
-/*Acá termina*/
+/* Carrito de Compras*/
+
+.intro-productos {
+    font-size: 20px;
+    font-weight: 400; 
+    line-height: 1.8;
+    padding: 20px; 
+    text-align: left;
+    margin: 20px 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.carrito-integrado {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.carrito-titulo {
+    margin-bottom: 15px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+}
+
+#carrito-items {
+    margin-bottom: 15px;
+    list-style: none;
+    padding: 0;
+}
+
+/* Estilo de cada elemento del carrito */
+.carrito-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.carrito-item-controles {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.carrito-item-controles button {
+    background-color: #667eea;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.carrito-item-controles button:hover {
+    background-color: #764ba2;
+}
+
+.carrito-item-cantidad {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+    min-width: 30px;
+}
+
+.boton-eliminar {
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.boton-eliminar:hover {
+    background-color: #c0392b;
+}
+
+.carrito-total {
+    font-size: 18px;
+    font-weight: bold;
+    text-align: right;
+    margin-top: 15px;
+    color: #333;
+}
+
+#vaciar-carrito {
+    display: block;
+    width: 100%;
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 15px;
+    transition: background-color 0.3s ease;
+    text-align: center;
+}
+
+#vaciar-carrito:hover {
+    background-color: #c0392b;
+}
+
+#pagar-carrito {
+    display: block;
+    width: 100%;
+    background-color: #667eea;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+    text-align: center;
+}
+
+#pagar-carrito:hover {
+    background-color: #233fbc; 
+}
+
+/* Productos */
+.productos-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    justify-items: center;
+}
+
+.producto {
+    text-align: center;
+    padding: 15px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 300px;
+}
+
+.producto-img {
+    width: 120px;
+    height: auto;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    object-fit: contain;
+}
+
+.precio {
+    font-size: 18px;
+    color: #764ba2;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.boton {
+    background-color: #667eea;
+    color: white;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.boton:hover {
+    background-color: #764ba2;
+}
+/* Termina Productos */
+
 
 @media screen and (max-width:800px){
 
