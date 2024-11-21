@@ -147,12 +147,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Vaciar todo el carrito
     function vaciarCarrito() {
-        carrito = []; // Limpia el carrito
-        actualizarCarrito(); // Refresca el carrito
-        localStorage.removeItem("carrito"); // Limpia el localStorage
+        carrito = []; 
+        actualizarCarrito(); 
+        localStorage.removeItem("carrito"); 
     }
 
-    // Guardar el carrito en Local Storage
+    // Empezamos con la parte de Local Storage para que permanezca al actualizar la página
     function guardarCarritoEnLocalStorage() {
         localStorage.setItem("carrito", JSON.stringify(carrito));
     }
